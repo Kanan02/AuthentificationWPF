@@ -1,0 +1,80 @@
+﻿<Window x:Class="AuthentificationUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AuthentificationUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="17" >
+    <Grid Background="#5F5E5E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0">Username:</Label>
+                    <Label Grid.Row="1" >Password:</Label>
+                </Grid>
+                <Grid  Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox >
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                
+                                <Setter Property="CornerRadius" Value="10"/>
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <TextBox Grid.Row="1">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+
+                                <Setter Property="CornerRadius" Value="10"/>
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+               
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="26*"/>
+                </Grid.RowDefinitions>
+                <CheckBox Content="Remember me" Foreground="White" HorizontalAlignment="Center"></CheckBox>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Login" Style="{StaticResource GreenButton}" ></Button>
+                    <Button Grid.Column="1" Style="{StaticResource RedButton}" Content="Cancel"></Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
