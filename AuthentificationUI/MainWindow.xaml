@@ -71,8 +71,8 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Login" Style="{StaticResource GreenButton}" ></Button>
-                    <Button Grid.Column="1" Style="{StaticResource RedButton}" Content="Cancel"></Button>
+                    <Button Content="Login" Style="{StaticResource GreenButton}" Foreground="White" ></Button>
+                    <Button Grid.Column="1" Style="{StaticResource RedButton}" Foreground="White" Content="Cancel"></Button>
                 </Grid>
             </Grid>
         </Grid>
